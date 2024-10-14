@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
+const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'https://esg-server-5.onrender.com/api';
 
 export const getRealTimeESGScores = async (companyName) => {
   try {
